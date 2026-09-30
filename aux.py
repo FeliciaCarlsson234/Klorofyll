@@ -20,11 +20,8 @@ def clean_chlorophyll(y, k: float, w: int):
     """spike filter for the chlorophyll
     day t is flagged when it is more than k times larger (or k times smaller)
     than the median of the previous w *cleaned* values. Flagged values are
-    replaced by that median. Only days before t are used, so the filter can be
-    applied identically to a growing history at prediction time.
-
-    Returns (cleaned values, boolean flags).
-    """
+    replaced by that median. only days before t are used, so the filter can be
+    applied the same to history at prediction time"""
     y = np.asarray(y, dtype=float)
     n = len(y)
     out = y.tolist()

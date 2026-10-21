@@ -6,7 +6,8 @@ import pickle
 from typing import Any
 import numpy as np
 import pandas as pd
-from utils import one_day_row
+from build_lagged_features import one_day_row
+
 
 def load_model(model_path: str | Path) -> Any:
     """Load and return the fitted model artifact."""

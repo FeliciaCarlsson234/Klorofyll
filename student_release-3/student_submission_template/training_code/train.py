@@ -29,7 +29,7 @@ def train_and_save(data_path: Path, output_path: Path) -> None:
 
     #training period (2015-01-15 to 2017-12-31)
     train_start = '2015-01-15'
-    train_end = '2017-12-31'
+    train_end = '2019-12-31'
 
     #create lagged variables
     df_lagged = build_lagged_frame(raw)
